@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About MiraDiv</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="./images/logo.png" alt="Logo" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showPage('home')">Main</a></li>
+                <li><a href="#" onclick="showPage('about')">About me</a></li>
+                <li><a href="#" onclick="showPage('games')">Games</a></li>
+                <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main page -->
+    <div id="home" class="page active">
+        <div class="hero">
+            <div class="hero-content fade-in">
+                <h1>
+                    <img src="./images/TestModelFramed.png" alt="Logo" class="hero-logo" />
+                    MiraDiv
+                </h1>
+                <p>The official developer's webpage</p>
+                <a href="#" class="cta-button" onclick="showPage('about')">Learn more</a>
+                <a href="#" class="cta-button" onclick="showPage('games')">Show Games</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About page -->
+    <div id="about" class="page">
+        <div class="container">
+            <div class="section">
+                <h2 class="fade-in">Кто я</h2>
+                <div class="cards-grid">
+                    <div class="card fade-in">
+                        <h3>🚀 Разработчик</h3>
+                        <p>Специализируюсь на создании веб-приложений, игр и интерактивных решений. Владею современными технологиями и инструментами разработки.</p>
+                    </div>
+                    <div class="card fade-in">
+                        <h3>🎮 Геймдизайнер</h3>
+                        <p>Создаю увлекательные игровые механики и интерфейсы. Понимаю психологию игроков и умею создавать захватывающий геймплей.</p>
+                    </div>
+                    <div class="card fade-in">
+                        <h3>💡 Креативщик</h3>
+                        <p>Генерирую идеи и воплощаю их в жизнь. Нестандартный подход к решению задач и создание уникальных пользовательских опытов.</p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Навыки</h2>
+                    <div class="cards-grid">
+                        <div class="card card-with-image fade-in" style="background-image: url('./images/frontend-bg.jpg')">
+                            <div class="card-content">
+                                <h3>Frontend</h3>
+                                <p>HTML5, CSS3, JavaScript, React, Vue.js, SASS, Webpack</p>
+                            </div>
+                        </div>
+                        <div class="card card-with-image fade-in" style="background-image: url('./images/backend-bg.jpg')">
+                            <div class="card-content">
+                                <h3>Backend</h3>
+                                <p>Node.js, Python, PHP, MySQL, MongoDB, REST API</p>
+                            </div>
+                        </div>
+                        <div class="card card-with-image fade-in" style="background-image: url('./images/gamedev-bg.jpg')">
+                            <div class="card-content">
+                                <h3>Game Dev</h3>
+                                <p>Unity, Unreal Engine, C#, C++, Game Design, 3D Modeling</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Games page -->
+    <div id="games" class="page">
+        <div class="container">
+            <div class="section">
+                <h2 class="fade-in">My games</h2>
+                <div class="game-preview">
+                    <a href="https://gamejolt.com/games/AwesomeSquarePuzzle/885884" class="game-card fade-in" style="background-image: url('./images/asp_logo.webp')">
+                        <div class="card-content">
+                            <h3>Awesome Square Puzzle</h3>
+                            <p>A minimalistic arcade platformer focused on timing and precision. Inspired by games like The Impossible Game. Created in Unity as a diploma project.</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://gamejolt.com/games/ConsoleBlackjack/883182" class="game-card fade-in" style="background-image: url('./images/CBJ.webp')">
+                        <div class="card-content">
+                            <h3>ConsoleBlackjack</h3>
+                            <p>A simple C++ console project that simulates a classic Blackjack experience. No AI, no graphics, only math.</p>
+                        </div>
+                    </a>
+                    
+                    <a href="dummy.html" class="game-card fade-in" style="background-image: url('./images/invoid.png')">
+                        <div class="card-content">
+                            <h3>Invoid</h3>
+                            <p>A 2D pixel art narrative game developed in Godot. Combines visual novel elements with light interactivity and exploration.</p>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects page -->
+    <div id="projects" class="page">
+        <div class="container">
+            <div class="section">
+                <h2 class="fade-in">Projects</h2>
+                <div class="game-preview">
+                    <a href="https://github.com/MiraDiv-git/Treat-Engine" class="game-card fade-in" style="background-image: url('./images/treat.png')">
+                        <div class="card-content">
+                            <h3>Treat Engine</h3>
+                            <p>Experimental 2D game engine written on Python. It uses ModernGL for rendering and CustomTKinter for Treat Editor.</p>
+                        </div>
+                    </a>
+
+                    <a href="index.html" class="game-card fade-in" style="background-image: url('./images/site.png')">
+                        <div class="card-content">
+                            <h3>This website</h3>
+                            <p>My personal developer's page written on raw HTML + CSS + JS. I don't like web, but I tried to make it as pretty as possible.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact page -->
+    <div id="contact" class="page">
+        <div class="container">
+            <div class="section">
+                <h2 class="fade-in">Contact MiraDiv</h2>
+                <div class="contact-form fade-in">
+                    <!-- Обновлённая форма с FormSubmit -->
+                    <form action="https://formsubmit.co/miradiv@outlook.com" method="POST">
+                        <!-- Скрытые настройки FormSubmit -->
+                        <input type="hidden" name="_subject" value="Message sent.">
+                        <input type="hidden" name="_autoresponse" value="Your message was sent! You'll get an answer just I read it.">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <!-- Поля формы -->
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send message</button>
+                    </form>
+                </div>
+                
+                <div class="cards-grid" style="margin-top: 3rem;">
+                    <div class="card fade-in">
+                        <h3>Email</h3>
+                        <a href="mailto:miradiv@outlook.com" class="card fade-in">miradiv@outlook.com</a>
+                    </div>
+                    <div class="card fade-in">
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/MiraDiv-git" class="card fade-in">github.com/MiraDiv-git</a>
+                    </div>
+                    <div class="card fade-in">
+                        <h3>Donations</h3>
+                        <a href="https://ko-fi.com/miradiv" class="card fade-in">https://ko-fi.com/miradiv</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Redo animations
+            setTimeout(() => {
+                const elements = document.querySelectorAll('#' + pageId + ' .fade-in');
+                elements.forEach((el, index) => {
+                    el.style.animation = 'none';
+                    setTimeout(() => {
+                        el.style.animation = `fadeIn 0.8s ease ${index * 0.1}s forwards`;
+                    }, 10);
+                });
+            }, 50);
+        }
+
+        // Particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Form
+        document.addEventListener('DOMContentLoaded', function() {
+            createParticles();
+
+            // Animation delay
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach((el, index) => {
+                el.style.animationDelay = index * 0.1 + 's';
+            });
+        });
+
+        // Smooth scrolling
+        document.addEventListener('click', function(e) {
+            if (e.target.matches('a[href^="#"]')) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+
+        // Card interactions
+        document.addEventListener('mousemove', function(e) {
+            const cards = document.querySelectorAll('.card, .game-card');
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                if (x >= 0 && x <= rect.width && y >= 0 && y <= rect.height) {
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const rotateX = (y - centerY) / 10;
+                    const rotateY = (centerX - x) / 10;
+                    
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
+                } else {
+                    card.style.transform = '';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project is WIP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="particles" id="particles"></div>
+
+  <!-- Navigation -->>
+  <nav>
+    <div class="nav-container">
+        <a href="#" class="logo">
+            <img src="./images/logo.png" alt="Logo" />
+        </a>
+    </div>
+</nav>
+
+  <!-- Dummy page -->
+  <section class="page active">
+    <div class="container fade-in" style="text-align:center; padding-top:150px;">
+      <h1 style="font-size:3rem; margin-bottom:1rem;">⏳ This project is still WIP</h1>
+      <p style="opacity:0.8; font-size:1.2rem;">
+        There will be something cool very soon. Please stand by...
+      </p>
+      <a href="index.html" class="cta-button" style="margin-top: 2rem;">Back to main page</a>
+    </div>
+  </section>
+
+  <!-- Particles -->
+  <script>
+    const particlesContainer = document.getElementById('particles');
+    const count = 100;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    for (let i = 0; i < count; i++) {
+      const p = document.createElement('div');
+      p.classList.add('particle');
+      resetParticle(p);
+      particlesContainer.appendChild(p);
+    }
+
+    function resetParticle(p) {
+      p.style.left = Math.random() * width + 'px';
+      p.style.top = Math.random() * height + 'px';
+      const scale = Math.random() * 0.5 + 0.5;
+      p.style.transform = `scale(${scale})`;
+      p.style.animationDuration = `${Math.random() * 4 + 4}s`;
+      p.style.opacity = Math.random() * 0.5 + 0.3;
+    }
+
+    window.addEventListener('resize', () => {
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      document.querySelectorAll('.particle').forEach(p => {
+        if (parseFloat(p.style.left) > w || parseFloat(p.style.top) > h) {
+          resetParticle(p);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
