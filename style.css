@@ -12,7 +12,7 @@
             overflow-x: hidden;
         }
 
-        /* Анимация частиц на фоне */
+        /* Background particles*/
         .particles {
             position: fixed;
             top: 0;
@@ -37,7 +37,7 @@
             50% { transform: translateY(-20px) rotate(180deg); opacity: 1; }
         }
 
-        /* Навигация */
+        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -107,7 +107,7 @@
             width: 100%;
         }
 
-        /* Контейнер страниц */
+        /* Page container */
         .page {
             display: none;
             min-height: 100vh;
@@ -123,7 +123,7 @@
             margin: 0 auto;
         }
 
-        /* Главная страница */
+        /* Main page */
         .hero {
             height: 90vh;
             display: flex;
@@ -198,7 +198,7 @@
             box-shadow: 0 10px 25px rgba(0, 245, 255, 0.5);
         }
 
-        /* Карточки */
+        /* Cards */
         .cards-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -276,9 +276,9 @@
             z-index: 2;
         }
 
-        /* Секции */
+        /* Sections */
         .section {
-            margin: 5rem 0;
+            margin: 2rem 0;
         }
 
         .section h2 {
@@ -289,7 +289,7 @@
             text-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
         }
 
-        /* Игровая секция - теперь такие же карточки как в навыках */
+        /* Game section */
         .game-preview {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -363,7 +363,7 @@
             line-height: 1.6;
         }
 
-        /* Контакты */
+        /* Contacts */
         .contact-form {
             max-width: 600px;
             margin: 0 auto;
@@ -401,7 +401,7 @@
             box-shadow: 0 0 10px rgba(0, 245, 255, 0.3);
         }
 
-        /* Адаптивность */
+        /* Adaptivity */
         @media (max-width: 768px) {
             .nav-links {
                 flex-direction: column;
@@ -417,7 +417,7 @@
             }
         }
 
-        /* Скролл-бар */
+        /* Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -431,7 +431,7 @@
             border-radius: 4px;
         }
 
-        /* Анимация появления */
+        /* Fade in animation */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
