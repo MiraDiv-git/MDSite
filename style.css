@@ -335,6 +335,13 @@
             background: rgba(15, 15, 35, 0.7);
             border-radius: 20px;
             z-index: 1;
+            backdrop-filter: blur(4px);
+            transition: background 0.4s ease, backdrop-filter 0.4s ease;
+        }
+
+        .game-card:hover::after {
+            background: rgba(15, 15, 35, 0);
+            backdrop-filter: blur(0px);
         }
 
         .game-card:hover::before {
@@ -350,6 +357,11 @@
         .game-card .card-content {
             position: relative;
             z-index: 2;
+            transition: opacity 0.3s ease;
+        }
+
+        .game-card:hover .card-content {
+            opacity: 0;
         }
 
         .game-card h3 {
